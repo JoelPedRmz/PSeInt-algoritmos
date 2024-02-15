@@ -1,0 +1,56 @@
+//Operaciones con Cadenas
+
+Proceso principal
+	//Longitud
+	Definir frase como cadena;
+	Definir tamanio como entero;
+	frase <- "Hola mundo";
+	tamanio <- Longitud(frase); //Va a retornar en entero la longitud de la candena
+	Escribir tamanio;
+	
+	//Subcadena
+	Definir frase,frase2 como cadenas;
+	frase <- "Hola mundo";
+	frase2 <- subcadena(frase,0,3); //Dentro de frase2 se almacena la subcadena de la posicon 0 a3
+	Escribir frase2;
+	
+	//Concatenar
+	Definir frase,frase2,frase3 como cadenas;
+	frase <- "Hola";
+	frase2 <- "mi nombre es:";
+	frase3 <- Concatenar(frase,frase2);
+	Escribir frase3;
+	
+	//Convertir a numero
+	Definir frase,frase2 como cadenas;
+	Definir num como entero;
+	frase <- "105";
+	num <- ConvertirANumero(frase) + 5; //Convierte el tipo cadena que contenga numeros a los mismos para utilizarlos de esta forma
+	Escribir num;
+	
+	//Convertir a texto
+	Definir frase,frase2 como cadenas;
+	Definir num como entero;
+	num <- 55;
+	frase <- ConvertirATexto(num); //Ya no sirve para operaciones, ahora es se usa como cadena
+	Escribir frase;
+	
+	//Mayusculas
+	Definir frase como cadenas;
+	frase <- "hola";
+	Escribir Mayusculas(frase);
+	
+	Definir frase como cadenas;
+	frase <- "hola";
+	frase <- Mayusculas(frase);
+	Escribir frase;
+	Definir frase como cadenas;
+	frase <- "hola";
+	frase <- Mayusculas(frase);
+	Escribir frase;
+	//Minusculas
+	Definir frase como cadenas;
+	frase <- "HOLA";
+	frase <- Minusculas(frase);
+	Escribir frase;
+FinProceso
