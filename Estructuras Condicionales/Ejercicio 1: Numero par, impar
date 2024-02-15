@@ -1,0 +1,16 @@
+/Ejercicio 1: Ingrese un numero entero y reportar si es par o impar
+//Condicional Simple
+
+Proceso ejercicio1
+	Definir num como entero;
+	
+	Escribir "Digite un numero";
+	leer num;
+	
+	Si num mod 2 = 0 Entonces //num mod 2 sacara el residuo de la operacion, si es 0, sera par
+		Escribir "El numero ",num," es par";
+	SiNo
+		Escribir "El numero ",num," es impar";
+	FinSi
+	
+FinProceso
