@@ -1,0 +1,47 @@
+//ORDENAMIENTOS: Metodo Burbuja
+
+Proceso principal
+	Definir i,j,aux como entero;
+	Definir ordenado como logico;
+	Definir num como real; 
+	Dimension num[5];
+	
+	Escribir "Digite los elementos del arreglo";
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir (i+1),". Digite un numero";
+		leer num[i];
+	FinPara
+	
+	ordenado <- Falso; //Inicia como falso para que entre en el bucle Mientras 
+	i <- 0;
+	
+	//Algoritmo del metodo burbuja
+	Mientras (ordenado=falso y i<=3) Hacer
+		ordenado <- Verdadero;
+		
+		Para j <- 0 Hasta 3 Con Paso 1 Hacer //Recorrer el arreglo
+			//Si numeor actual es mayor a numero siguiente y se queda tal cual hasta que no se realice ningun cambio de elementos en el arreglo
+			Si num[j] > num[j+1]; Entonces
+				aux <- num[j];
+				num[j] <- num[j+1];
+				num[j+1] <- aux;
+				ordenado <- Falso; //Cambia a falso cada vez que se hace un cambio de los elementos dentro del arreglo
+			FinSi
+		FinPara
+		i <- i + 1;
+	FinMientras
+	
+	Escribir "";
+	Escribir "El arreglo ordenado es: ";
+	
+	//Arreglo en forma ascendente
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir num[i];
+	FinPara
+	
+	//Para imprimir el arreglo en forma descendente
+	//Para i <- 4 Hasta 0 Con Paso -1 Hacer
+		//Escribir num[i];
+	//FinPara
+	
+FinProceso
