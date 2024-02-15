@@ -1,0 +1,35 @@
+//Llenar y mostrar una matriz
+
+Proceso principal
+	Definir num,i,j como entero; //"i" para contabilizar filas y "j" para columnas
+	Dimension num[3,3]; //Tambien se puede utilzar para crear matrices
+	
+	//Llenar una matriz (manual)
+	//num[0,0] <- 8;
+	//num[0,1] <- 2;
+	
+	//Llenar una matriz (usuario)
+	
+	//Filas
+	Para i <- 0 Hasta 2 Con Paso 1 Hacer //Hasta N-1
+		//Columnas
+		Para j <- 0 Hasta 2 Con Paso 1 Hacer //Hasta N-1
+			Escribir Sin Saltar "Digite un numero: [",i,"][",j,"]: ";
+			leer num[i,j];
+		FinPara
+	FinPara
+	
+	//Mostrar una matriz manual
+	//Escribir "";
+	//Escribir num[1,2];
+	
+	//Mostrar una matriz (todos los elementos), hay que recorrerla
+	Escribir "";
+	
+	Para i <- 0 Hasta 2 Con Paso 1 Hacer
+		Para j <- 0 Hasta 2 Con Paso 1 Hacer
+			Escribir Sin Saltar num[i,j];
+		FinPara
+		Escribir "";
+	FinPara
+FinProceso
