@@ -1,0 +1,13 @@
+//Ciclo indeterminado de iteraciones Mientras-Hacer
+
+Proceso ciclo
+	Definir i como entero;
+	
+	i <- 1; //Inicia valiendo 1
+	
+	Mientras i<=10 Hacer //Hasta que se cumpla la condicion (=10) saldra del bucle
+		Escribir i;
+		i <- i + 1; //El aumento del i se hace dentro del bucle
+	FinMientras
+	
+FinProceso
