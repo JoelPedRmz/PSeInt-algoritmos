@@ -1,0 +1,48 @@
+//Busqueda Binaria
+
+Proceso principal
+	Definir i,dato,inf,sup,mitad,posicion como entero;
+	Definir encontrado como logico;
+	Definir num como entero;
+	Dimension num[5];
+	
+	Escribir "Digite los elementos del arreglo";
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir Sin Saltar i,". Digite un numero";
+		leer num[i];
+	FinPara
+	
+	Escribir "";
+	Escribir Sin Saltar "Digite un elemento a buscar";
+	leer dato;
+	
+	//Algoritmo de la busqueda binaria
+	encontrado <- Falso;
+	inf <- 0; //Limite inferior
+	sup <- 5; //Limite superior es igual al numero de elementos 
+	i <- 0;
+	
+	mitad <- trunc((inf+sup)/2); //Guarda la parte entera de la operacion
+	
+	Mientras (inf<=sup y i<5 y encontrado=falso) Hacer
+		Si (num[mitad]=dato) Entonces
+			encontrado <- Verdadero;
+			posicion <- mitad;
+		SiNo
+			Si (num[mitad]>dato) Entonces
+				sup <- mitad;
+				mitad <- trunc((inf+sup)/2);
+			SiNo
+				inf <- mitad;
+				mitad <- trunc((inf+sup)/2);
+			FinSi
+		FinSi
+		i <- i + 1;
+	FinMientras
+	
+	Si (encontrado = Verdadero) Entonces
+		Escribir "El elemento ha sido encontrado en la posicion: ",posicion;
+	SiNo
+		Escribir  "El elemento no se ha encontrado en el arreglo.";
+	FinSi
+FinProceso
