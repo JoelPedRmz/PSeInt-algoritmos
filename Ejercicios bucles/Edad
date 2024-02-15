@@ -1,0 +1,15 @@
+//Ejercicio 2: Escribir un programa que pregunte al su edad y muestre por pantalla todos los años que ha cumplido (desde 1 hasta su edad).
+
+Proceso ejercicio2
+	Definir edad,i como entero;
+	
+	Escribir "Ingrese su edad";
+	leer edad;
+	
+	i <- 1;
+	
+	Repetir
+		Escribir "Has cumplido: ",i;
+		i <- i + 1;
+	Hasta Que i > edad
+FinProceso
