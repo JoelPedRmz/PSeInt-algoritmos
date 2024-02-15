@@ -1,0 +1,23 @@
+//Recursividad
+
+Funcion retorno <- factorial(num)
+	Definir retorno como entero;
+	
+	//Caso base
+	Si num = 0 Entonces
+		retorno <- 1;
+		
+	//Caso recursivo
+	SiNo
+		retorno <- num * factorial(num - 1);
+	FinSi
+FinFuncion
+
+Proceso principal
+	Definir num como entero;
+	
+	Escribir Sin Saltar 'Digite un numero';
+	leer num;
+	
+	Escribir 'El factorial del numero es: ',factorial(num);
+FinProceso
