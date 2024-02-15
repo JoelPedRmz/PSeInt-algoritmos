@@ -1,0 +1,25 @@
+//Ejercicio 1: Pedir al usuario numeros reales con un limite de 5 valores, sumarlos y sacar el promedio de estos
+
+Proceso ejercicio1
+	Definir i como entero;
+	Definir suma,promedio como real;
+	
+	Definir num como real;
+	Dimension num[5];
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese un numero real";
+		leer num[i];
+	FinPara
+	
+	suma <- 0;
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		suma <- suma + num[i];
+	FinPara
+	
+	promedio <- suma / i;
+
+	Escribir "La suma de los numeros ingresados es: ",suma;
+	Escribir "El promedio de los numeros es: ",promedio;
+FinProceso
